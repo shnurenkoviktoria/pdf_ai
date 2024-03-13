@@ -1,0 +1,35 @@
+{
+  "English": {
+    "language_text": "Select the language of the page",
+    "header": "Chat with multiple PDFs :books:",
+    "user_question_text": "Ask a question about your documents:",
+    "document_header": "Your documents",
+    "upload_button_text": "Upload your PDFs here and click on 'Process'",
+    "process_button_text": "Process",
+    "processing_message": "Processing",
+    "success_message": "Text extracted successfully",
+    "error_message": "No PDF file uploaded"
+  },
+  "Spanish": {
+    "language_text": "Seleccione el idioma de la página",
+    "header": "Chatea con múltiples archivos PDF :books:",
+    "user_question_text": "Haga una pregunta sobre sus documentos:",
+    "document_header": "Tus documentos",
+    "upload_button_text": "Sube tus archivos PDF aquí y haz clic en 'Proceso'",
+    "process_button_text": "Proceso",
+    "processing_message": "Procesando",
+    "success_message": "Texto extraído exitosamente",
+    "error_message": "No se ha subido ningún archivo PDF"
+  },
+  "Ukrainian": {
+    "language_text": "Виберіть мову сторінки",
+    "header": "Спілкуйтеся в чаті з кількома PDF-файлами :books:",
+    "user_question_text": "Задайте питання щодо ваших документів:",
+    "document_header": "Ваші документи",
+    "upload_button_text": "Завантажте свої PDF-файли сюди та натисніть «Обробити»",
+    "process_button_text": "Обробити",
+    "processing_message": "Обробляю",
+    "success_message": "Текст успішно вилучено",
+    "error_message": "Файл PDF не завантажено"
+  }
+}
