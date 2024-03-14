@@ -79,6 +79,7 @@ def main():
         language = st.selectbox(
             language_options["English"]["language_text"], list(language_options.keys())
         )
+        st.divider()
     if "conversation" not in st.session_state:
         st.session_state.conversation = None
     if "chat_history" not in st.session_state:
