@@ -12,8 +12,25 @@ To install the MultiPDF Chat App, please follow these steps:
 
 1. Clone the repository to your local machine.
 
-2. Install the required dependencies by running the following command:
+   Make sure you are in the correct current directory.
+
+   if not, change the directory to the correct one:
+   ```bash
+   cd <path_to_directory>.
    ```
+    Then run one of the following command:
+    ```bash
+   pip install git+https://github.com/shnurenkoviktoria/pdf_ai.git
+   ```
+   or
+   ```bash
+    git clone https://github.com/shnurenkoviktoria/pdf_ai.git
+    ```
+   or download the zip file and extract it to the desired directory.
+   
+
+2. Install the required dependencies by running the following command:
+   ```bash
    pip install -r requirements.txt
    ```
 
@@ -27,12 +44,12 @@ To install the MultiPDF Chat App, please follow these steps:
 To use the MultiPDF Chat App, follow these steps:
 
 1. Ensure that you have installed the required dependencies and added the OpenAI API key to the `.env` file.
-   ```
+   ```bash
    cd <path_to_directory>.
    ```
 
 2. Run the `main.py` file using the Streamlit CLI. Execute the following command:
-   ```
+   ```bash
    streamlit run pdfs.py
    ```
 
