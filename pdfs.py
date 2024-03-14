@@ -11,6 +11,8 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import FAISS
 
 from htmlTemplates import css, bot_template, user_template
+from prompt import get_qa_prompt_template
+from icecream import ic
 
 
 def get_pdf_text(pdf_docs):
@@ -38,10 +40,14 @@ def get_vectorstore(text_chunks):
 
 def get_conversation_chain(vectorstore):
     llm = ChatOpenAI()
-
+    qa_prompt = get_qa_prompt_template()
+    ic(qa_prompt)
     memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
     conversation_chain = ConversationalRetrievalChain.from_llm(
-        llm=llm, retriever=vectorstore.as_retriever(), memory=memory
+        llm=llm,
+        retriever=vectorstore.as_retriever(),
+        memory=memory,
+        combine_docs_chain_kwargs={"prompt": qa_prompt},
     )
     return conversation_chain
 
