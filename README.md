@@ -18,16 +18,16 @@ To install the MultiPDF Chat App, please follow these steps:
    ```
 
 3. Obtain an API key from OpenAI and add it to the `.env` file in the project directory.
-```commandline
-OPENAI_API_KEY = your_secrit_api_key
-```
+   ```commandline
+   OPENAI_API_KEY = your_secrit_api_key
+   ```
 
 ## Usage
 -----
 To use the MultiPDF Chat App, follow these steps:
 
 1. Ensure that you have installed the required dependencies and added the OpenAI API key to the `.env` file.
- ```
+   ```
    cd <path_to_directory>.
    ```
 
